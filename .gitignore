@@ -1,0 +1,6 @@
+*.jpeg
+*.jpg
+*.pkl
+*.h5
+uploaded images/
+merged_image.jpg
