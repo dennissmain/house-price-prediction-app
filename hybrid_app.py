@@ -88,6 +88,9 @@ with st.form('my_form'):
 if submitted:
     # Display loading animation
     with st_lottie_spinner(st.session_state['loading_animation'], height=300, width=300):
+        # ✅ Make sure upload folder exists (fixes FileNotFoundError)
+        if not os.path.exists("uploaded images"):
+            os.makedirs("uploaded images")
         # Encode categorical features
         for col in categories.keys():
             for value in categories[col]:
