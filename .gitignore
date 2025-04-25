@@ -1,6 +1,6 @@
 *.jpeg
 *.jpg
-*.pkl
-*.h5
+!*.pkl
+!*.h5
 uploaded images/
 merged_image.jpg
