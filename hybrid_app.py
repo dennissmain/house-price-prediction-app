@@ -11,8 +11,6 @@ from keras.models import load_model
 import os
 import streamlit as st
 
-st.write("✅ App has started")
-st.write("Current working directory:", os.getcwd())
 st.set_page_config(page_title = 'House Price Prediction', page_icon = ':cityscape:', layout = 'wide')
 
 # Load categorical feature categories from JSON file
