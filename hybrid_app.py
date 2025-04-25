@@ -126,3 +126,23 @@ if submitted:
         ensemble_weight = 0.9
         weighted_ensemble = xgb_preds * ensemble_weight + cnn_model_pred * (1 - ensemble_weight)
         st.write(f"This house should cost around £{weighted_ensemble:.0f}")
+
+        from pymongo import MongoClient
+        from datetime import datetime
+
+    # Connect to MongoDB
+    client = MongoClient(st.secrets["MONGO_URI"])
+    db = client.house_price_logs
+    collection = db.predictions
+
+    # Create log entry
+    log_entry = {
+        "timestamp": datetime.utcnow(),
+        "input_features": features_dict,
+        "predicted_price": round(weighted_ensemble)
+    }
+
+    collection.insert_one(log_entry)
+    st.success("✅ Prediction logged to MongoDB!")
+
+        
