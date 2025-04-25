@@ -23,6 +23,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Streamlit (for Azure App Service)
-        run: |
-          streamlit run hybrid_app.py --server.port=8000 --server.address=0.0.0.0
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: house-price-prediction-app
+          slot-name: production
+          publish-profile: ${{ secrets.HOUSEPRICE_WEBAPP_PUBLISH_PROFILE }}
+          package: .
