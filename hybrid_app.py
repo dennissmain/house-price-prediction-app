@@ -38,7 +38,11 @@ if 'loaded_xgboost_model' not in st.session_state.keys():
         st.session_state['loading_animation'] = json.loads(f.read())
 
 # Display initial animation
-st_lottie(st.session_state.get('lottie_animation'), speed=1, height=430, key="initial")
+lottie_anim = st.session_state.get('lottie_animation')
+if lottie_anim:
+    st_lottie(lottie_anim, speed=1, height=430, key="initial")
+else:
+    st.warning("⚠️ Could not load the Lottie animation.")
 
 # Display headers and information
 st.header('House Price Prediction')
