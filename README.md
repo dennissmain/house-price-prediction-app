@@ -30,8 +30,7 @@ A comprehensive, MLOps-driven house price prediction platform built with Python,
 📂 Project Structure
 
 <pre>
-```mermaid
-graph TD
+```
     A[User] --> B[Streamlit App]
     B --> C{Model Selection}
     C --> D[CatBoost Model]
