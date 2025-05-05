@@ -29,22 +29,12 @@ A comprehensive, MLOps-driven house price prediction platform built with Python,
 
 📂 Project Structure
 
-house-price-prediction-app/
-│
-├── .devcontainer/            # Development container configurations
-├── .github/
-│   └── workflows/            # GitHub Actions workflows
-├── .streamlit/               # Streamlit configuration files
-├── models/                   # Pre-trained ML models
-│
-├── app.py                    # Main Streamlit application
-├── hybrid_app.py             # Hybrid model implementation
-├── deep_learning_app.py      # Deep learning model implementation
-├── utils.py                  # Utility functions
-│
-├── requirements.txt          # Python dependencies
-├── Dockerfile                # Docker configuration
-└── README.md                 # Project documentation
+```mermaid
+graph TD
+    User -->|Inputs house data| StreamlitApp
+    StreamlitApp -->|Calls model| PredictionEngine
+    PredictionEngine -->|Returns prediction| StreamlitApp
+    StreamlitApp -->|Saves input + result| MongoDB
 
 
 📦 Installation
