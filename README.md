@@ -29,12 +29,24 @@ A comprehensive, MLOps-driven house price prediction platform built with Python,
 
 📂 Project Structure
 
+<pre>
 ```mermaid
 graph TD
-    User -->|Inputs house data| StreamlitApp
-    StreamlitApp -->|Calls model| PredictionEngine
-    PredictionEngine -->|Returns prediction| StreamlitApp
-    StreamlitApp -->|Saves input + result| MongoDB
+    A[User] --> B[Streamlit App]
+    B --> C{Model Selection}
+    C --> D[CatBoost Model]
+    C --> E[XGBoost Model]
+    C --> F[Hybrid / Deep Learning Model]
+    
+    D --> G[Prediction Output]
+    E --> G
+    F --> G
+
+    G --> H[Display in App]
+    G --> I[Store in MongoDB]
+```
+</pre>
+
 
 
 📦 Installation
