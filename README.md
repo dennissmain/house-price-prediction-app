@@ -9,6 +9,7 @@ A comprehensive, MLOps-driven house price prediction platform built with Python,
 
 🚀 Features
 	•	Interactive Web Interface: User-friendly Streamlit app for inputting property details and viewing predictions.
+ 
 	•	Multiple ML Models: Incorporates CatBoost, XGBoost, and a deep learning model for robust predictions.
 	•	Hybrid Ensemble Model: Combines multiple models to enhance prediction accuracy.
 	•	MongoDB Integration: Stores user inputs and prediction results for analysis and model retraining.
