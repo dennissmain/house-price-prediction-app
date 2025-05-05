@@ -43,6 +43,7 @@ house-price-prediction-app/
 ├── Dockerfile               # Docker configuration
 └── README.md                # Project documentation
 
+
 📦 Installation
 
 Prerequisites
