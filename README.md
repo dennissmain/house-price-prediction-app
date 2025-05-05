@@ -2,7 +2,8 @@
 
 A comprehensive, MLOps-driven house price prediction platform built with Python, Streamlit, Docker, MongoDB, and Azure. This application offers real-time predictions, seamless scalability, and continuous model retraining, providing an end-to-end solution from exploratory modeling to a fully automated, cloud-deployed web app.
 
-<img width="1512" alt="Screenshot 2025-05-05 at 18 38 19" src="https://github.com/user-attachments/assets/b73af3e7-12c2-4bc2-8308-3bedb59e5fd9" />
+<img width="1512" alt="Screenshot 2025-05-05 at 19 25 19" src="https://github.com/user-attachments/assets/b09c9589-77f0-45e6-9fd8-be7807f26778" />
+
 
 
 
