@@ -18,6 +18,7 @@ A comprehensive, MLOps-driven house price prediction platform built with Python,
 	•	Continuous Retraining: Implements MLOps practices for model monitoring and retraining.
 
 🧰 Tech Stack
+
 	•	Frontend: Streamlit
 	•	Backend: Python
 	•	Machine Learning: scikit-learn, XGBoost, CatBoost, TensorFlow
@@ -27,6 +28,7 @@ A comprehensive, MLOps-driven house price prediction platform built with Python,
 	•	CI/CD: GitHub Actions
 
 📂 Project Structure
+
 
 house-price-prediction-app/
 ├── .devcontainer/           # Development container configurations
